@@ -17,6 +17,7 @@ eliminarlas durante la transición.
 ## Uso local
 
 ```bash
+npm run refresh:data  # solo cuando estén disponibles las PWA locales de origen
 npm test
 python3 -m http.server 8767 --directory dist
 ```

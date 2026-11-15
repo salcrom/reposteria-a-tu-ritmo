@@ -1,0 +1,6 @@
+body.modal-open{overflow:hidden}
+.detail{position:fixed;inset:0;z-index:30;margin:0;padding:clamp(12px,4vw,44px);border:0;border-radius:0;background:rgba(35,25,22,.72);overflow:auto;overscroll-behavior:contain}
+.modal-panel{position:relative;width:min(1080px,100%);margin:auto;border-radius:30px;background:#fff;box-shadow:0 24px 80px rgba(20,12,10,.38);overflow:hidden}
+.modal-panel .close{position:sticky;top:12px;z-index:2;float:right;width:46px;height:46px;margin:14px;border-radius:50%;background:#fff;color:var(--ink);box-shadow:0 4px 16px rgba(30,20,18,.2);cursor:pointer}
+.modal-panel .detail-head{clear:both;margin-top:-74px;padding-top:78px}
+@media(max-width:520px){.detail{padding:0}.modal-panel{min-height:100%;border-radius:0}.modal-panel .detail-head{padding-top:82px}.modal-panel .close{top:8px;margin:10px}}

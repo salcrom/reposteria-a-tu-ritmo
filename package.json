@@ -1,0 +1,10 @@
+{
+  "name": "reposteria-a-tu-ritmo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-recipes.mjs",
+    "test": "npm run build:data && node --test tests/*.test.mjs"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name":"Repostería a tu ritmo",
+  "short_name":"Repostería",
+  "description":"Catálogo general de recetas dulces con cantidades ajustables.",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#fffaf3",
+  "theme_color":"#6f352d",
+  "icons":[{"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

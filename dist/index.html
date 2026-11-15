@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#6f352d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Repostería">
+  <title>Repostería a tu ritmo</title>
+  <meta name="description" content="Recetas dulces organizadas por tipo, método y nivel, con cantidades ajustables y procedencia clara.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg">
+  <link rel="apple-touch-icon" href="icons/icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#">🍰 Repostería a tu ritmo</a><button id="update" class="update" hidden>Actualizar PWA</button></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">Colección general · transición segura</p><h1>Todo lo dulce, mejor ordenado.</h1><p class="lead">Busca por tipo, método o dificultad. Las fichas completas permiten ajustar raciones; las antiguas mantienen su acceso original mientras terminamos la migración.</p></div>
+      <aside><strong id="total">47</strong><span>fichas organizadas</span><small>Sin buñuelos de nata</small></aside>
+    </section>
+    <section class="controls" aria-label="Buscar y filtrar recetas">
+      <label class="search"><span>Buscar</span><input id="search" type="search" placeholder="Tarta, chocolate, airfryer…" autocomplete="off"></label>
+      <div id="filters" class="filters"><button class="active" data-filter="all">Todas</button><button data-filter="new">Nuevas</button><button data-filter="tartas">Tartas</button><button data-filter="bolleria">Bollería</button><button data-filter="galletas">Galletas</button><button data-filter="postres-frios">Postres fríos</button><button data-filter="basicos">Básicos</button><button data-filter="colecciones">Colecciones</button></div>
+    </section>
+    <section class="summary" aria-live="polite"><strong id="visibleCount"></strong><span id="summaryText"></span></section>
+    <section id="recipes" class="grid" aria-label="Recetas"></section>
+    <section id="detail" class="detail" hidden></section>
+  </main>
+  <footer><p>Las recetas pendientes de prueba están identificadas. Comprueba alérgenos, conservación y el primer horneado antes de servir.</p></footer>
+  <script type="module" src="app.js?v=2"></script>
+</body>
+</html>

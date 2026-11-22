@@ -83,22 +83,79 @@ export const RECIPES=[
   },
   {
     "id": "postre-recetasconsabor",
-    "title": "Postre de repostería familiar",
-    "category": "pendientes",
-    "method": "por identificar",
-    "difficulty": "por revisar",
-    "base": 0,
-    "time": "Pendiente",
+    "title": "Tarta fría de galletas María y ColaCao",
+    "category": "tartas",
+    "method": "frío",
+    "difficulty": "fácil",
+    "base": 6,
+    "time": "25 min + 4 h de frío",
     "source": "https://www.instagram.com/_recetasconsabor/reel/DfdXZDjqG9L/",
     "author": "@_recetasconsabor",
-    "ingredients": [],
-    "steps": [],
-    "note": "La descripción visible no identifica ingredientes ni elaboración. Se conserva en revisión y no se presenta todavía como receta reproducible.",
+    "ingredients": [
+      [
+        200,
+        "g",
+        "galletas María"
+      ],
+      [
+        370,
+        "g",
+        "leche condensada"
+      ],
+      [
+        250,
+        "ml",
+        "leche para la crema"
+      ],
+      [
+        2,
+        "cda",
+        "ColaCao para la crema"
+      ],
+      [
+        5,
+        "láminas",
+        "gelatina neutra"
+      ],
+      [
+        100,
+        "ml",
+        "leche para mojar las galletas"
+      ],
+      [
+        1,
+        "cdta",
+        "ColaCao para decorar"
+      ]
+    ],
+    "steps": [
+      [
+        "Hidratar la gelatina",
+        "Pon {{ingredient:4}} de gelatina en abundante agua fría durante 5 minutos, hasta que estén blandas."
+      ],
+      [
+        "Hacer la crema",
+        "Calienta {{ingredient:2}} de leche con {{ingredient:1}} de leche condensada y {{ingredient:3}} de ColaCao, removiendo hasta disolver. No dejes que hierva. Retira del fuego, escurre bien la gelatina y añádela a la mezcla caliente. Remueve hasta que se disuelva por completo y deja templar 10 minutos."
+      ],
+      [
+        "Montar las capas",
+        "Forra el molde con film. Moja rápidamente las galletas en {{ingredient:5}} de leche y cubre el fondo. Vierte la mitad de la crema, coloca otra capa de galletas mojadas, añade el resto de la crema y termina con galletas."
+      ],
+      [
+        "Enfriar",
+        "Tapa y refrigera al menos 4 horas; para un corte más limpio, déjala toda la noche."
+      ],
+      [
+        "Desmoldar y decorar",
+        "Desmolda en un plato y espolvorea {{ingredient:6}} de ColaCao por encima justo antes de servir."
+      ]
+    ],
+    "note": "Versión facilitada por el propietario a partir del reel: sustituye el café soluble por ColaCao. Con cinco láminas queda firme para cortar; con cuatro queda más cremosa. Si la crema está muy líquida al montar, déjala templar un poco más. Mantén la tarta refrigerada. Pendiente de prueba real.",
     "origin": "Colección Instagram · Postres",
-    "migration": "review",
+    "migration": "complete",
     "priority": "new",
-    "status": "faltan datos",
-    "desc": "La descripción visible no identifica ingredientes ni elaboración. Se conserva en revisión y no se presenta todavía como receta reproducible.",
+    "status": "pendiente de prueba",
+    "desc": "Versión facilitada por el propietario a partir del reel: sustituye el café soluble por ColaCao. Con cinco láminas queda firme para cortar; con cuatro queda más cremosa. Si la crema está muy líquida al montar, déjala templar un poco más. Mantén la tarta refrigerada. Pendiente de prueba real.",
     "emoji": "🍰",
     "colors": [
       "#7b3f2b",

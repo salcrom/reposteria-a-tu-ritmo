@@ -1,5 +1,198 @@
 export const RECIPES=[
   {
+    "id": "tarta-queso-turron",
+    "title": "Tarta de queso con turrón blando",
+    "ingredients": [
+      [
+        500,
+        "g",
+        "queso crema"
+      ],
+      [
+        200,
+        "g",
+        "turrón blando de Jijona"
+      ],
+      [
+        200,
+        "ml",
+        "nata para montar"
+      ],
+      [
+        3,
+        "ud",
+        "huevos M"
+      ],
+      [
+        12,
+        "g",
+        "maicena"
+      ]
+    ],
+    "category": "tartas",
+    "method": "horno",
+    "difficulty": "media",
+    "base": 8,
+    "time": "45–55 min de horno + 6 h de frío",
+    "priority": "new",
+    "migration": "complete",
+    "status": "pendiente de prueba",
+    "origin": "Receta propia",
+    "emoji": "🍰",
+    "desc": "El turrón aporta el dulzor.",
+    "steps": [
+      [
+        "Preparar el molde",
+        "Precalienta el horno a 165 °C con calor arriba y abajo. Forra con papel de horno un molde redondo de 18 cm para 8 raciones. Si cambias las raciones, ajusta el diámetro para mantener una altura similar."
+      ],
+      [
+        "Mezclar",
+        "Desmenuza el turrón y tritúralo con la nata. Incorpora el queso crema y la maicena. Añade los huevos uno a uno y mezcla solo hasta integrar."
+      ],
+      [
+        "Hornear",
+        "Vierte la mezcla en el molde. Hornea entre 45 y 55 minutos como referencia para 8 raciones. Comprueba desde el minuto 45: los bordes deben estar firmes y el centro temblar ligeramente como un bloque."
+      ],
+      [
+        "Enfriar",
+        "Deja templar sobre una rejilla, refrigera al menos 6 horas y desmolda en frío."
+      ]
+    ],
+    "note": "El turrón aporta el dulzor. Contiene almendra, leche y huevo. Receta propia pendiente de prueba en cocina."
+  },
+  {
+    "id": "tarta-queso-azul",
+    "title": "Tarta de queso con queso azul",
+    "ingredients": [
+      [
+        500,
+        "g",
+        "queso crema"
+      ],
+      [
+        40,
+        "g",
+        "gorgonzola dulce"
+      ],
+      [
+        200,
+        "ml",
+        "nata para montar"
+      ],
+      [
+        3,
+        "ud",
+        "huevos M"
+      ],
+      [
+        85,
+        "g",
+        "azúcar"
+      ],
+      [
+        12,
+        "g",
+        "maicena"
+      ]
+    ],
+    "category": "tartas",
+    "method": "horno",
+    "difficulty": "media",
+    "base": 8,
+    "time": "45–55 min de horno + 6 h de frío",
+    "priority": "new",
+    "migration": "complete",
+    "status": "pendiente de prueba",
+    "origin": "Receta propia",
+    "emoji": "🍰",
+    "desc": "Si usas cabrales o roquefort, prueba con 20–25 g para 8 raciones.",
+    "steps": [
+      [
+        "Preparar el molde",
+        "Precalienta el horno a 165 °C con calor arriba y abajo. Forra con papel de horno un molde redondo de 18 cm para 8 raciones. Si cambias las raciones, ajusta el diámetro para mantener una altura similar."
+      ],
+      [
+        "Mezclar",
+        "Desmenuza el gorgonzola y mézclalo con el queso crema, la nata, el azúcar y la maicena. Añade los huevos uno a uno y mezcla solo hasta integrar."
+      ],
+      [
+        "Hornear",
+        "Vierte la mezcla en el molde. Hornea entre 45 y 55 minutos como referencia para 8 raciones. Comprueba desde el minuto 45: los bordes deben estar firmes y el centro temblar ligeramente como un bloque."
+      ],
+      [
+        "Enfriar",
+        "Deja templar sobre una rejilla, refrigera al menos 6 horas y desmolda en frío."
+      ]
+    ],
+    "note": "Si usas cabrales o roquefort, prueba con 20–25 g para 8 raciones. Sirve con pera asada y nueces tostadas si te apetece. Contiene leche y huevo, y nueces si las añades. Receta propia pendiente de prueba en cocina."
+  },
+  {
+    "id": "tarta-queso-payoyo",
+    "title": "Tarta de queso con queso Payoyo",
+    "ingredients": [
+      [
+        500,
+        "g",
+        "queso crema"
+      ],
+      [
+        100,
+        "g",
+        "queso Payoyo semicurado"
+      ],
+      [
+        200,
+        "ml",
+        "nata para montar"
+      ],
+      [
+        3,
+        "ud",
+        "huevos M"
+      ],
+      [
+        80,
+        "g",
+        "azúcar"
+      ],
+      [
+        12,
+        "g",
+        "maicena"
+      ]
+    ],
+    "category": "tartas",
+    "method": "horno",
+    "difficulty": "media",
+    "base": 8,
+    "time": "45–55 min de horno + 6 h de frío",
+    "priority": "new",
+    "migration": "complete",
+    "status": "pendiente de prueba",
+    "origin": "Receta propia",
+    "emoji": "🍰",
+    "desc": "El semicurado aporta sabor sin dominar la crema.",
+    "steps": [
+      [
+        "Preparar el molde",
+        "Precalienta el horno a 165 °C con calor arriba y abajo. Forra con papel de horno un molde redondo de 18 cm para 8 raciones. Si cambias las raciones, ajusta el diámetro para mantener una altura similar."
+      ],
+      [
+        "Mezclar",
+        "Quita la corteza del Payoyo y rállalo fino. Calienta la nata sin hervir, añade el queso y remueve. Deja templar y mezcla con el queso crema, el azúcar y la maicena. Añade los huevos uno a uno y mezcla solo hasta integrar."
+      ],
+      [
+        "Hornear",
+        "Vierte la mezcla en el molde. Hornea entre 45 y 55 minutos como referencia para 8 raciones. Comprueba desde el minuto 45: los bordes deben estar firmes y el centro temblar ligeramente como un bloque."
+      ],
+      [
+        "Enfriar",
+        "Deja templar sobre una rejilla, refrigera al menos 6 horas y desmolda en frío."
+      ]
+    ],
+    "note": "El semicurado aporta sabor sin dominar la crema. Contiene leche y huevo. Receta propia pendiente de prueba en cocina."
+  },
+  {
     "id": "yule-kinder",
     "title": "Tronquitos Kinder Bueno",
     "category": "tartas",

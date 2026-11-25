@@ -1,4 +1,4 @@
-import {RECIPES} from "./recipes.js?v=3";
+import {RECIPES} from "./recipes.js?v=4";
 
 const $=s=>document.querySelector(s);
 const state={filter:"all",query:"",selected:null,servings:0};

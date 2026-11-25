@@ -56,7 +56,132 @@ const pending=[
   {id:"crema-pastelera",title:"Crema pastelera de vainilla",category:"basicos",method:"cazo",difficulty:"fácil",base:8,time:"25 min + frío",source:"https://www.instagram.com/bakerybynoelia/reel/Dc75w4is6w-/",author:"@bakerybynoelia",ingredients:[[500,"ml","leche"],[70,"g","azúcar"],[4,"","yemas"],[30,"g","maicena"],[1,"","vaina de vainilla"],[1,"cantidad","canela y piel de limón al gusto"]],steps:[["Infusionar","Calienta la leche con vainilla, canela y piel de limón. Retira los aromáticos."],["Mezclar","Une azúcar y maicena antes de incorporarlas a las yemas; bate hasta que no haya grumos."],["Templar","Vierte la leche caliente poco a poco sobre las yemas mientras remueves."],["Espesar","Devuelve al cazo y cocina a fuego medio sin dejar de remover hasta que hierva y espese."],["Enfriar","Pasa a una bandeja limpia, cubre con film a piel y enfría rápidamente antes de refrigerar."]],note:"Receta básica tomada de la descripción pública. Conserva a 4 °C o menos y utiliza en un máximo de 48 horas."}
 ].map((r,index)=>({...r,origin:"Colección Instagram · Postres",migration:r.ingredients.length?"complete":"review",priority:"new",status:r.ingredients.length?"pendiente de prueba":"faltan datos",desc:r.note,emoji:"🍰",colors:["#7b3f2b","#e7a86e"]}));
 
-const recipes=[...pending,...migrated,...provisional].filter(r=>r.id!=="bunuelos-nata");
+const cheesecakes = [
+  {
+    "id": "tarta-queso-turron",
+    "title": "Tarta de queso con turrón blando",
+    "ingredients": [
+      [
+        500,
+        "g",
+        "queso crema"
+      ],
+      [
+        200,
+        "g",
+        "turrón blando de Jijona"
+      ],
+      [
+        200,
+        "ml",
+        "nata para montar"
+      ],
+      [
+        3,
+        "ud",
+        "huevos M"
+      ],
+      [
+        12,
+        "g",
+        "maicena"
+      ]
+    ],
+    "mix": "Desmenuza el turrón y tritúralo con la nata. Incorpora el queso crema y la maicena.",
+    "note": "El turrón aporta el dulzor. Contiene almendra, leche y huevo."
+  },
+  {
+    "id": "tarta-queso-azul",
+    "title": "Tarta de queso con queso azul",
+    "ingredients": [
+      [
+        500,
+        "g",
+        "queso crema"
+      ],
+      [
+        40,
+        "g",
+        "gorgonzola dulce"
+      ],
+      [
+        200,
+        "ml",
+        "nata para montar"
+      ],
+      [
+        3,
+        "ud",
+        "huevos M"
+      ],
+      [
+        85,
+        "g",
+        "azúcar"
+      ],
+      [
+        12,
+        "g",
+        "maicena"
+      ]
+    ],
+    "mix": "Desmenuza el gorgonzola y mézclalo con el queso crema, la nata, el azúcar y la maicena.",
+    "note": "Si usas cabrales o roquefort, prueba con 20–25 g para 8 raciones. Sirve con pera asada y nueces tostadas si te apetece. Contiene leche y huevo, y nueces si las añades."
+  },
+  {
+    "id": "tarta-queso-payoyo",
+    "title": "Tarta de queso con queso Payoyo",
+    "ingredients": [
+      [
+        500,
+        "g",
+        "queso crema"
+      ],
+      [
+        100,
+        "g",
+        "queso Payoyo semicurado"
+      ],
+      [
+        200,
+        "ml",
+        "nata para montar"
+      ],
+      [
+        3,
+        "ud",
+        "huevos M"
+      ],
+      [
+        80,
+        "g",
+        "azúcar"
+      ],
+      [
+        12,
+        "g",
+        "maicena"
+      ]
+    ],
+    "mix": "Quita la corteza del Payoyo y rállalo fino. Calienta la nata sin hervir, añade el queso y remueve. Deja templar y mezcla con el queso crema, el azúcar y la maicena.",
+    "note": "El semicurado aporta sabor sin dominar la crema. Contiene leche y huevo."
+  }
+].map(({mix,note,...recipe})=>({
+  ...recipe,
+  category:"tartas",method:"horno",difficulty:"media",base:8,
+  time:"45–55 min de horno + 6 h de frío",
+  priority:"new",migration:"complete",status:"pendiente de prueba",
+  origin:"Receta propia",emoji:"🍰",desc:note.split(". ")[0]+".",
+  steps:[
+    ["Preparar el molde","Precalienta el horno a 165 °C con calor arriba y abajo. Forra con papel de horno un molde redondo de 18 cm para 8 raciones. Si cambias las raciones, ajusta el diámetro para mantener una altura similar."],
+    ["Mezclar",mix+" Añade los huevos uno a uno y mezcla solo hasta integrar."],
+    ["Hornear","Vierte la mezcla en el molde. Hornea entre 45 y 55 minutos como referencia para 8 raciones. Comprueba desde el minuto 45: los bordes deben estar firmes y el centro temblar ligeramente como un bloque."],
+    ["Enfriar","Deja templar sobre una rejilla, refrigera al menos 6 horas y desmolda en frío."]
+  ],
+  note:note+" Receta propia pendiente de prueba en cocina."
+}));
+
+const recipes=[...cheesecakes,...pending,...migrated,...provisional].filter(r=>r.id!=="bunuelos-nata");
 await mkdir(path.join(root,"dist"),{recursive:true});
 await writeFile(path.join(root,"dist/recipes.js"),`export const RECIPES=${JSON.stringify(recipes,null,2)};\n`);
-console.log(`Generadas ${recipes.length} fichas: ${pending.length} nuevas, ${migrated.length} migradas y ${provisional.length} provisionales.`);
+console.log(`Generadas ${recipes.length} fichas: ${pending.length + cheesecakes.length} nuevas, ${migrated.length} migradas y ${provisional.length} provisionales.`);
